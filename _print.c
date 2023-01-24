@@ -20,7 +20,7 @@ if (format[0] == '%' && format[1] == ' ' && !format[2])
 return (-1);
 for (p = format; *p; p++)
 {
-if(*p == '%')
+if (*p == '%')
 {
 p++;
 if (*p == '%')
