@@ -49,4 +49,4 @@ int _printf(const char *format, ...)
 	va_end(ap);
 	return (num_char);
 
-19G}19Gi
+}

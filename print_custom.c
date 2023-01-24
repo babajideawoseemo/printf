@@ -16,7 +16,7 @@ int print_bigS(va_list l, flags_t *f)
 	int i, count = 0;
 	char *res;
 	char *s = va_arg(l, char *);
-	
+
 	(void)f;
 	if (!s)
 		return (_puts("(null)"));
@@ -69,7 +69,7 @@ int print_rev(va_list l, flags_t *f)
 * Return: number of char printed
 */
 
-int print_percent(va_list, flag_t *f)
+int print_percent(va_list l, flag_t *f)
 {
 	(void)l;
 	(void)f;
