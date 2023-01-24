@@ -27,7 +27,9 @@ int (*get_print(char s))(va_list, flags_t *)
 		{'%', print_percent}
 		};
 
-	int funcs = 14, i;
+	int funcs = 14;
+
+	register int i;
 
 	for (i = 0; i < funcs; i++)
 	{

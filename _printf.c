@@ -16,7 +16,7 @@ int _printf(const char *format, ...)
 	const char *p;
 	flags_t flags = {0, 0, 0};
 	int (*pfunc)(va_list, flags_t *);
-	int i;
+
 	register int num_char = 0
 
 	va_start(ap, format);
@@ -49,4 +49,4 @@ int _printf(const char *format, ...)
 	va_end(ap);
 	return (num_char);
 
-}
+19G}19Gi
