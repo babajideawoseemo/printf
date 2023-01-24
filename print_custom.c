@@ -25,12 +25,12 @@ int print_bigS(va_list l, flags_t *f)
 	{
 		if (s[i] > 0 && (s[i] < 32 || s[i] >= 127))
 		{
-			puts("\\x");
+			_puts("\\x");
 			count += 2;
 			res = convert(s[i], 16, 0);
 			if (!res[1])
 				count += _putchar('0');
-			count += puts(res);
+			count += _puts(res);
 		}
 		else
 			count += _putchar(s[i]);
@@ -69,7 +69,7 @@ int print_rev(va_list l, flags_t *f)
 * Return: number of char printed
 */
 
-int print_percent(va_list l, flag_t *f)
+int print_percent(va_list l, flags_t *f)
 {
 	(void)l;
 	(void)f;
