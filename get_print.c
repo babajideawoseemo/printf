@@ -12,7 +12,7 @@ int (*get_print(char s))(va_list, flags_t *)
 {
 ph func_arr[] = {
 {'i', print_int},
-{'a', print_string},
+{'s', print_string},
 {'c', print_char},
 {'d', print_int},
 {'u', print_unsigned},
@@ -33,4 +33,3 @@ if (func_arr[i].c == s)
 return (func_arr[i].f);
 return (NULL);
 }
-
