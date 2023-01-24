@@ -34,6 +34,12 @@ char *str = convert(u, 10, 0);
 return (_puts(str));
 }
 
+/**
+ *print_number - print a integer number
+ *@n: the value required
+ *Return: the nunber input
+ */
+
 void print_number(int n)
 {
 unsigned int n1;

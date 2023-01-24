@@ -2,7 +2,7 @@
 
 /**
  * print_bigS - Non printable characters
- * (0 < ASCII value < 32 or >= 127) are 
+ * (0 < ASCII value < 32 or >= 127) are
  * printed this way
  *@l: va_list arguments from _printf
  *@f: pointer to the struct flags that determines if a
@@ -45,7 +45,7 @@ return (count);
 
 int print_rev(va_list l, flags_t *f)
 {
-  int i = 0, j;
+int i = 0, j;
 char *s = va_arg(l, char *);
 (void)f;
 if (!s)
@@ -78,7 +78,7 @@ if (s[j] < 'A' || (s[j] > 'Z' && s[j] < 'a') || s[j] > 'z')
 _putchar(s[j]);
 else
 {
-for(i = 0; i <= 52; i++)
+for (i = 0; i <= 52; i++)
 {
 if (s[j] == rot13[i])
 _putchar(ROT13[i]);
