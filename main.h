@@ -13,20 +13,20 @@
 
 typedef struct flags
 {
-  int plus;
-  int space;
-  int hash;
+int plus;
+int space;
+int hash;
 } flags_t;
 
 /**
  *struct printHandler - struct to choose the right function
- *@c: format specifier
+ *@c: format specifier passed to _printf()
  *@f: pointer to the correct printing function
- */
+*/
 typedef struct printHandler
 {
-  char c;
-  int (*f)(va_list ap, flags_t *f);
+char c;
+int (*f)(va_list ap, flags_t *f);
 } ph;
 
 int print_int(va_list l, flags_t *f);
@@ -57,7 +57,6 @@ int print_rev(va_list l, flags_t *f);
 int print_bigS(va_list l, flags_t *f);
 
 int print_address(va_list l, flags_t *f);
-
 int print_percent(va_list l, flags_t *f);
 
 #endif
