@@ -17,7 +17,7 @@ int _printf(const char *format, ...)
 	flags_t flags = {0, 0, 0};
 	int (*pfunc)(va_list, flags_t *);
 
-	register int num_char = 0
+	register int num_char = 0;
 
 	va_start(ap, format);
 	if (!format || (format[0] == '%' && !format[1]))
@@ -40,7 +40,7 @@ int _printf(const char *format, ...)
 			pfunc = get_print(*p);
 			num_char += (pfunc)
 				? pfunc(ap, &flags)
-				: printf("%%%c", *p);
+				: _printf("%%%c", *p);
 		}
 		else
 			num_char += _putchar(*p);
