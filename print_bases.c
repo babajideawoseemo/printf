@@ -4,7 +4,8 @@
  *print_hex - prints a number in hexadecimal
  *@l: va_list arguments from _printf
  *@f: pointer to the struct
- *Description: the function calls convert() to convert input
+ *Description: the function calls convert()
+ *to convert input
  *Return: the number of char printed
  */
 int print_hex(va_list l, flags_t *f)
