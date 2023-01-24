@@ -5,6 +5,7 @@
  * _putchar - writes the character c to stdout
  * @c: The character to print
  *Description: _putchar uses a local buffer of 1024
+ *Return: 1 on success, -1 on error
 */
 
 int _putchar(char c)
